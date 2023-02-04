@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Pendaftaran</h1>
+    <div>
+        Nama : <input type="text" id="nama">
+    </div>
+    <div>
+    Umur : <input type="text" id="umur">
+</div>
+    <div>Uang Sangu : <input type="text" id="sangu">
+        </div>
+
+
+    <button onclick="getDataInput()">Submit</button>
+    <ul id="nama_peserta"></ul>
+
+    <script>
+        let data = []
+        function getDataInput(){
+
+            const nama_input = document.getElementById("nama")
+            console.log(nama_input.value)
+            data.push(nama_input.value)
+            console.log(data)
+            const node = document.createElement("li")
+            const value_li = document.createTextNode(nama_input.value)
+            node.appendChild(value_li)
+            document.getElementById("nama_peserta").appendChild(node)
+        }
+    </script>
+
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  </head>
+  <body class="vw-100 vh-100 d-flex flex-column align-items-center">
+    <!-- sebelumnya id = "scoring-form" -->
+    <form
+      id="regristrasi" 
+      class="d-flex flex-column align-items-center justify-content-center mt-5"
+    >
+      <h1>Form Regristrasi</h1>
+      <div class="d-flex flex-column mb-4">
+        <label for="name">Nama</label>
+        <input
+          class="form-control form-control-lg"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Masukan Nama Anda"
+        />
+        <small id="name-error-message" class="text-danger"></small>
+      </div>
+      <div class="d-flex flex-column mb-4">
+        <label for="email">Umur</label>
+        <input
+          class="form-control form-control-lg"
+          type="number"
+          id="umur"
+          name="umur"
+          placeholder="Nasukan Umur Anda"
+        />
+        <small id="score-error-message" class="text-danger"></small>
+      </div>
+      <div class="d-flex flex-column mb-4">
+        <label for="email">Uang Sangu</label>
+        <input
+          class="form-control form-control-lg"
+          type="number"
+          id="sangu"
+          name="sangu"
+          placeholder="Masukan Uang Sangu"
+        />
+        <small id="score-error-message" class="text-danger"></small>
+      </div>
+   
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+    <div>
+      <table class="table table-striped table-info mt-4" style="width: 500px">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Umur</th>
+            <th scope="col">Uang Sangu</th>
+          </tr>
+        </thead>
+        <tbody id="score-table-body"></tbody>
+      </table>
+      <div class="d-flex mt-5">
+        <input
+          class="form-control form-control-lg"
+          type="text"
+          id="file-name"
+          name="file-name"
+          placeholder="Enter file name"
+        />
+        <button id="save-button" class="btn btn-primary mx-2 btn-lg text-nowrap">
+          Save Nilai to File
+        </button>
+      </div>
+    </div>
+    <div id="success-notif" class="toast" style="position: absolute; top: 20px; right: 20px">
+      <div class="toast-body">File telah berhasil disimpan.</div>
+    </div>
+    <!-- <script src="src/index.js"></script> -->
+
+    <script>
+
+let data = []
+function getDataInput(){
+    const nama_input = document.getElementById("nama")
+    console.log(nama_input.value)
+    data.push(nama_input.value)
+    console.log(data)
+}
+
+    </script>
+    <br>
+
+<h1>MAAP BANGET KAK REZA GA NGERTI BIKINNYA , LAGI AGA PADET MINGGU INI</h1>
+
+    
+  </body>
+</html> -->
